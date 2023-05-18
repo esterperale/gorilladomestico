@@ -27,15 +27,15 @@ nav ul li {
     margin-right: 30px;
 }
 .attivo{
-    text-decoration: underline solid #144722;
+    text-decoration: underline solid 2px #144722;
     
 }
 .attiva{
     color:#144722;
 }
 .link:hover {
-    color:black;
-    text-decoration: underline black;
+    color:#144722;
+    text-decoration: underline antiquewhite;
 }
 .link:active {
     color:black;
@@ -291,12 +291,18 @@ nav ul li {
     text-align: center;
     color: antiquewhite;
 }
+.fa-brands{
+    font-size: 50px 50px
+}
 .card{
     width: 30%;
     height: 200px;
     background-color: #144722;
-    margin-bottom: 30px;
+    margin: 100px 10%;
+    text-align: center;
+    box-shadow: 1px 1px 40px #CC5C20;
 }
+
 /*pagina curiosità*/
 .bianchino{
     background-color: antiquewhite;
