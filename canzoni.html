@@ -1,0 +1,421 @@
+<!-- sistemare le allineature prima di pubblicare -->
+<!doctype html>
+<html lang="it">
+    <head>
+        <title>Gorilla Domestico</title>
+        <!-- ccaratteri speciali -->
+        <meta charset="utf-8">
+        <!-- collegamento Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- collegamento a CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- icona tab -->
+        <link rel="shortcut icon" href="immagini/iconatab.ico" type="image/x-icon">
+        <!-- collegamento icone -->
+        <script src="https://kit.fontawesome.com/213dbaaf38.js" crossorigin="anonymous"></script>
+        <!-- inserire i font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body{ 
+                margin:0px;
+            }
+            .wrappersx{
+                text-align: left;
+                font-family: 'Montserrat', serif;
+                font-weight: 400;        
+            }
+            .wrapperdx{
+                text-align: right;
+                font-family: 'Montserrat', serif;
+                font-weight: 400;                
+            }
+            .wrapper a {
+                display: inline-bolck;
+                text-decoration: none;
+                padding: 7px 30px;
+                background-color: #f1eeee;
+                border-radius: 100px;
+                color: #111;
+                text-align: right;                
+            }
+            .modal {
+                visibility: hidden;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #144722;
+                transition: all 0.5s;
+            }
+            .modal:target {
+                visibility: visible;
+                opacity: 1;
+            }
+            .content-modal {
+                border-radius: 15px;
+                position: relative;
+                width: 600px;
+                background: antiquewhite;
+                padding: 80px 10px;
+                text-align: center;
+                color: #144722;
+                border: 8px solid #144722;
+                font-family: 'Montserrat', serif;
+                font-weight: 400;
+            }
+            .overflow-text {
+                width: 40%;
+                height: 80%;
+                margin-top:20px;
+                padding: 10px;
+                background: antiquewhite;    
+                border: 15px solid #CC5C20 ;
+                overflow-y: scroll;     
+            }
+            .content-modal a {
+                color: #111;
+                align-items: right;
+            }
+            .content-modal a:hover{
+                color:#CC5C20;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body class="container-fluid">
+        <header class="fixed-top">
+            <section class ="menù">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm">
+                        <li><a href="index.html"><img id="logo" src="immagini/logo2.png" alt="logo"/></a></li>
+                    </div>
+                    <div class="col-sm">
+                        <nav>
+                            <ul>                               
+                                <li><a class="link allineamento attivo" href="canzoni.html"> canzoni </a></li> 
+                                <li><a class="link allineamento" href="galleria.html">galleria </a></li> 
+                                <li><a class="link allineamento" href="curiosità.html">curiosità</a></li> 
+                                <li><a class="link allineamento" href="contatti.html">contatti</a></li>
+                                <li><a class ="link allineamento" href="newsletter.html"><i class="fa-solid fa-envelope"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">
+                            
+                        </th>
+                    </tr>
+                    </thead>
+                </table>
+            </section>
+            <div id="bricioledipane">
+                <span><a class="link" href="index.html">home</a></span> &gt;
+                <span><a class="link" href="canzoni.html">canzoni</a></span> &gt;
+            </div>
+        </header>
+        
+        
+        <main><!-- si potrebbero aggiungere o delle icone tipo loop e condividi-->
+            <section class="centrareasinistra canzonisinistra section">
+                <p class="titolocanzonesx">
+                    al di là del mare</p>
+                    <audio controls>
+                        <source src="canzoni/AL_DI_LA_DEL_MARE.wav" type="audio/wav">
+                    </audio>
+                <div class="wrapper wrapperdx"><a href="#custom-modal1"> testo canzone <i class="fa-solid fa-align-center"></i> </a>
+                </div>
+                <div id="custom-modal1" class="modal">
+                    <div class="content-modal overflow-text">
+                        <a href="#" class="close-modal"><i class="fa-regular fa-circle-xmark"></i></a>
+                        <p>Sognerò il vecchio mondo</br>
+                            per non vivere più così</br>
+                            Lascerò casa nostra</br>
+                            Per non morire qui</br>
+                            Sentirò la mia terra così stretta</br>
+                            Da costringermi</br>
+                            Vi lascerò soli prender posto</br>
+                            in questo mondo  </br>
+                            sì che la vita non vi sorprenda mai
+                        </p>
+                        <p>E lascia stare</br>
+                            il freddo siderale</br>
+                            L'indifferenza che hanno le persone</br>
+                            Se vuoi comincio a ballare</br>
+                            Se vuoi posso farti innamorare</br>
+                            Se vuoi posso restare</br>
+                            A guardare per ore passare un torpore</br>
+                            Un dolore al cuore.
+                        </p>
+                        <p>E so che non ritornerò</br>
+                            La mia terra è un paradiso</br>
+                            Ma no! No, non ritornerò</br>
+                            Perché mi fai schifo te</br>
+                            Sì mi fai schifo te</br>
+                            Con la tua poca fantasia</br>
+                            Non sai sognare mondi che stanno al di là</br>
+                            del mare.  
+                        </p>
+                        <p>Forse un giorno mi odierai</br>
+                            Figlio mio mi disprezzerai</br>
+                            E fai bene ad arrabbiarti</br>
+                            Con chi non ci tiene</br>
+                            Purché sia un motivo per sognare</br>
+                            E quando ci riuscirai anche tu mi potrai di nuovo amare.
+                        </p>
+                        <p>E lascia stare</br>
+                            il freddo siderale</br>
+                            L'indifferenza che hanno le persone</br>
+                            Se vuoi comincio a ballare</br>
+                            Se vuoi posso farti innamorare</br>
+                            Se vuoi posso restare</br>
+                            A guardare per ore passare un torpore</br>
+                            Un dolore al cuore.
+                        </p>
+                        <p>Ma so che non ritornerò</br>
+                            La mia terra è un paradiso</br>
+                            Ma no! No, non ritornerò</br>
+                            Perché mi fai schifo te</br>
+                            Sì mi fai schifo te</br>
+                            Con la tua poca fantasia</br>
+                            Non sai sognare mondi che stanno al di là</br>
+                            Del mare.
+                        </p>
+                        <a href="#" class="close-modal"><i class="fa-regular fa-circle-xmark"></i></a>
+
+                    </div>
+                </div>
+            </section>
+            <section class="centrareadestra canzonidestra">
+                <p class="titolocanzonedx">
+                    tornerò a casa</p>
+                    <audio controls>
+                     <source src="canzoni/TORNERO_A_CASA.wav" type="audio/wav">
+                    </audio>
+                <div class="wrapper wrappersx"><a href="#custom-modal2"> testo canzone <i class="fa-solid fa-align-center"></i> </a>
+                </div>
+                <div id="custom-modal2" class="modal">
+                    <div class="content-modal overflow-text">
+                        <a href="#" class="close-modal"><i class="fa-regular fa-circle-xmark"></i></a>
+                        <p>Non voglio più camminare, un altro giorno</br>
+                            con queste mie vecchie scarpe</br>
+                            il cui unico ricordo</br>
+                            la fatica di andare avanti
+                        </p>
+                        <p>Ah, non voglio più questo zaino</br>
+                            pieno di niente, si di niente
+                        </p>
+                        <p>Giorno dopo giorno, camminare, sotto il sole</br>
+                            mi cuoce la pelle</br>
+                            per poi cosa fare, dove andare, chi incontrare</br>
+                            se tu non ci sei
+                        </p>
+                        <p>Ah e tutta questa gente che mi ignora</br>
+                            non esisto più, niente di più</br>
+                        </p>
+                        <p>Quindi ho deciso di tornare</br>
+                            forse per un boccone</br>
+                            O per raccontare delle storie</br>
+                            udite da un pescatore
+                        </p>
+                        <p>Ah aspettando l'ultimo treno</br>
+                            l'odore di stazione nelle narici
+                        </p>
+                        <p>Tornerò a casa</br>
+                            Tornerò a casa</br>
+                            Tornerò a casa</br>
+                            Tornerò a casa</br>
+                        </p>
+                        <p>Ah aspettando l'ultimo treno
+                            l'odore di stazione nelle narici</br>
+                        </p>
+                        <p>Tornerò a casa
+                        </p>
+                        <a href="#" class="close-modal"><i class="fa-regular fa-circle-xmark"></i></a>
+                    </div>
+                </div>
+            </section>
+            <section class="centrareasinistra canzonisinistra">
+                <p class="titolocanzonesx">
+                    scogli</p>
+                    <audio controls>
+                        <source src="canzoni/SCOGLI.wav" type="audio/wav">
+                    </audio>
+                <div class="wrapper wrapperdx"><a href="#custom-modal3"> testo canzone <i class="fa-solid fa-align-center"></i> </a>
+                </div>
+                <div id="custom-modal3" class="modal">
+                    <div class="content-modal overflow-text">
+                        <a href="#" class="close-modal"><i class="fa-regular fa-circle-xmark"></i></a>
+                        <p>Bisognava che smettessi di bere</br>
+                            prima di rompere un altro bicchiere</br>
+                            ma con quel coccio di vetro ci scruto l'oceano
+                        </p>
+                        <p>Sapendo che presto dovrò ripartire</br>
+                            non ho ancora scelto la mia maledizione</br>
+                            Il mare, il liquore o questa canzone
+                        </p>
+                        <p>Ma riparto e poi ritorno</br>
+                            ed ho paura ogni volta che busso </br>
+                            e se non apri sarò un bicchiere di troppo</br> 
+                            in una pila di piatti sporchi
+                        </p>
+                        <p>E portami al mare a far correre il cane</br>
+                            Lontano cento birre dai pub di Dublino</br>
+                            Voglio che il tuo sangue sia il mio vino</br>
+                            E che il senso di colpa si ubriachi di te
+                        </p>
+                        <p>Ma non ho mai imparato dai miei orrori</br>
+                            non ho costanza, non ho volontà</br>
+                            ho solo lo strano coraggio di tornare ogni volta da te
+                        </p>
+                        <p>Che sei uno scoglio</br>
+                            e il mio corpo le onde</br>
+                            le mie braccia le onde</br>
+                            le mie mani le onde</br>
+                            le mie dita le onde
+                        </p>
+                        <p>e tu t'assottigli ogni giorno di più</p>
+                        <p>E portami al mare a far correre il cane</br>
+                            Lontano cento birre dai pub di Dublino</br>
+                            Voglio che il tuo sangue sia il mio vino</br>
+                            E che il senso di colpa si ubriachi di te</br>
+                            E che il senso di colpa si ubriachi di te
+                        </p>
+                        <a href="#" class="close-modal"><i class="fa-regular fa-circle-xmark"></i></a>
+
+                    </div>
+                </div>
+            </section>
+            <section class="centrareadestra canzonidestra">
+                <p class="titolocanzonedx">
+                    nuvole</p>
+                    <audio controls>
+                     <source src="canzoni/NUVOLE.wav" type="audio/wav">
+                    </audio>
+                <div class="wrapper wrappersx"><a href="#custom-modal4"> testo canzone <i class="fa-solid fa-align-center"></i> </a>
+                </div>
+                <div id="custom-modal4" class="modal">
+                    <div class="content-modal overflow-text">
+                        <a href="#" class="close-modal"><i class="fa-regular fa-circle-xmark"></i></a>
+
+                        <p>Ho voglia di ascoltare canzoni</br>
+                            che parlano del vento, della luna, del sole,</br>
+                            di quando sbocciano i fiori a primavera.</br>
+                            O di quando sei partito senza soldi</br>
+                            e ne hai incontrate cento: dalla bruna, alle more</br>
+                            e la rossa come il fuoco di quella sera.
+                        </p>
+                        <p>E stare con la testa appesa tra le nuvole</br>
+                            pensando a quanto in fondo è facile</br>
+                            prendersi in giro anche per un istante</br>
+                            facendoti ridere con i miei tanti perché.
+                        </p>
+                        <p>E ho voglia d'ascoltare viaggiatori</br>
+                            che parlan con l'accento impresso nelle persone</br>
+                            che si affidano alla voce di un'altra era.</br>
+                            O le storie di marinai già soli</br>
+                            che han visto l'incupirsi lento della natura nel mare</br>
+                            ma loro signora è ancora questa sfera.
+                        </p>
+                        <p>E stare con la testa appesa tra le nuvole</br>
+                            pensando a quanto in fondo è facile</br>
+                            prendersi in giro anche per un istante</br>
+                            facendoti ridere con i miei tanti perché.
+                        </p>
+                        <a href="#" class="close-modal"><i class="fa-regular fa-circle-xmark"></i></a>
+
+                    </div>
+                </div>
+                
+            </section>
+            <section class="centrareasinistra canzonisinistra">
+                <p class="titolocanzonesx">
+                    come in africa</p>
+                    <audio controls>
+                        <source src="canzoni/COME_IN _AFRICA.wav" type="audio/wav">
+                    </audio>
+                <div class="wrapper wrapperdx"><a href="#custom-modal5"> testo canzone <i class="fa-solid fa-align-center"></i> </a>
+                </div>
+                <div id="custom-modal5" class="modal">
+                    <div class="content-modal overflow-text">
+                        <a href="#" class="close-modal"><i class="fa-regular fa-circle-xmark"></i></a>
+                        <p>Hai girato ancora un po' la testa</br>
+                            dicendo che il mondo era alla storta</br>
+                            così tanto che sei caduto a terra</br>
+                            battendo con la faccia,</br>
+                            Ti sei trasferito</br>
+                            tanto la fabbrica fa schifo,</br>
+                            che sia in montagna o in pianura</br>
+                            o sul fondo del fiume.
+                        </p>
+                        <p>Ma no, no, no</br>
+                            stanotte tu non ci vuoi pensar</br>
+                            se tu sei qua</br>
+                            è perché con lei è come stare in Africa
+                        </p>
+                        <p>Il vero te stesso dici che hai trovato</br>
+                            quella sera da ubriaco</br>
+                            ma parli e vivi con la paura</br>
+                            che ti ci abbia un po' fregato</br>
+                            e fingi un cinico candore</br>
+                            ma uccidi la chimica con le parole
+                        </p>
+                        <p>Ma no, no, no</br>
+                            stanotte tu non ci vuoi pensar</br>
+                            se tu sei qua</br>
+                            è perché con lei è come stare in Africa
+                        </p>
+                        <p>E poi solo poter essere ascoltato</br>
+                            ma non vuoi più ascoltare nessuno</br>
+                            e te ne stai con i tuoi pensieri sopra il prato </br>
+                            intanto un altro giorno di fretta se ne è andato
+                        </p>
+                        <p>Ma no, no, no</br>
+                            stanotte tu non ci vuoi pensar</br>
+                            se tu sei qua</br>
+                            è perché con lei è come stare in Africa
+                        </p>
+                        <a href="#" class="close-modal"><i class="fa-regular fa-circle-xmark"></i></a>
+                    </div>
+                </div>    
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                <div class="col-sm">
+                    <li><a href="index.html"><img id="logo" src="immagini/logo2.png" alt="logo"/></a></li>
+                </div>
+                <div class="col-sm">
+                    <nav>
+                        <ul>                                 
+                            <li><a class="link" href="canzoni.html"> canzoni </a></li> 
+                            <li><a class="link" href="galleria.html">galleria </a></li> 
+                            <li><a class="link" href="curiosità.html">curiosità</a></li> 
+                            <li><a class="link" href="contatti.html">contatti</a></li>
+                            <li><a class ="link" href="newsletter.html"><i class="fa-solid fa-envelope"></i></a></li>
+                            <li><a class="link" href="documentazione.html">documentazione <i class="fa-solid fa-file-lines"></i></a></li>                        
+                        </ul>
+                    </nav>
+                </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
