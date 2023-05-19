@@ -291,16 +291,18 @@ nav ul li {
     text-align: center;
     color: antiquewhite;
 }
-.fa-brands{
-    font-size: 50px 50px
-}
 .card{
     width: 30%;
-    height: 200px;
+    height: 20%;
     background-color: #144722;
-    margin: 100px 10%;
+    margin: 50px 10%;
     text-align: center;
     box-shadow: 1px 1px 40px #CC5C20;
+    color:antiquewhite;
+    border-top: 50%;
+}
+.icona{
+    color: antiquewhite;
 }
 
 /*pagina curiosità*/
