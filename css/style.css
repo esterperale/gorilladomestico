@@ -11,6 +11,7 @@ body{
 }
 header, footer{
     block-size: 40%, 100%;
+    max-height: 175px;
     background-color:#CC5C20;
     text-transform:uppercase;
     text-align: left;
