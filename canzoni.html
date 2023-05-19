@@ -102,6 +102,7 @@
                 font-size: 20px;
             }
         </style>
+        
     </head>
     <body class="container-fluid">
         <header class="fixed-top">
@@ -146,10 +147,12 @@
             <section class="centrareasinistra canzonisinistra section">
                 <p class="titolocanzonesx">
                     al di là del mare</p>
-                    <audio controls>
-                        <source src="canzoni/AL_DI_LA_DEL_MARE.wav" type="audio/wav">
-                    </audio>
-                <div class="wrapper wrapperdx"><a href="#custom-modal1"> testo canzone <i class="fa-solid fa-align-center"></i> </a>
+                <audio controls>
+                    <source src="canzoni/AL_DI_LA_DEL_MARE.wav" type="audio/wav">
+                </audio>
+                    
+
+                <div class="wrapper wrapperdx"><a href="#custom-modal1"> testo canzone <i class="fa-solid fa-align-center"></i></a>
                 </div>
                 <div id="custom-modal1" class="modal">
                     <div class="content-modal overflow-text">
@@ -427,4 +430,17 @@
             </div>
         </footer>
     </body>
+    <script type="text/javascript">                                                                                                                                    
+        $('#mipiace').click(function() {
+            $('#mipiace').disabled = true;               
+            $.ajax({    
+                type: "GET",  
+                url: "updatemipiace.php",  
+                success: function(response){
+                    $("#contatore").html(response);
+                    $('#mipiace').disabled = false;
+                } 
+            });
+        });
+    </script>
 </html>

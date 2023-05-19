@@ -126,6 +126,7 @@ nav ul li {
     width: 33%;
     height: 33%;
 }
+
 /* pagina della galleria*/
 .galleria {
     display: grid; /*se volessi togliere lo spazio tra le foto aggiungere: gab:-15%;*/
