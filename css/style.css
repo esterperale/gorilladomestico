@@ -427,11 +427,12 @@ nav ul li {
 .wireframe{
     max-width: 200px;
     max-height: 500px;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 .documentazione{
     background-color: antiquewhite;
     font-family:'Montserrat', sans-serif ;
+    color:#144722;
 }
 .documentazione h2{
     font-weight: 700;
