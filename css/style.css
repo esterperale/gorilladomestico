@@ -73,7 +73,7 @@ nav ul li {
 }
 .centrareadestra{
     text-align: right;
-    background-color: antiquewhite;
+    background-color: #faebd7;
     padding:50%, auto;
     margin-inline-start:50%;
     border: 30px solid antiquewhite;
@@ -417,4 +417,22 @@ nav ul li {
     margin: 0;
     padding: 0;
     color: antiquewhite;
+}
+
+/*pagina documentazione*/
+.albero{
+    max-width: 800px;
+    height: auto;
+}
+.wireframe{
+    max-width: 200px;
+    max-height: 500px;
+    margin-bottom: 20px;
+}
+.documentazione{
+    background-color: antiquewhite;
+    font-family:'Montserrat', sans-serif ;
+}
+.documentazione h2{
+    font-weight: 700;
 }
